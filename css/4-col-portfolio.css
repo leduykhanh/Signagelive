@@ -1,0 +1,29 @@
+/*!
+ * Start Bootstrap - 4 Col Portfolio (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+body {
+    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+.portfolio-item:nth-of-type(odd){
+  background-color: yellow;
+}
+.portfolio-item:nth-of-type(even){
+  background-color: green;
+}
+.portfolio-item {
+    display: none;
+    padding: 10px 10px 5px 10px;
+    text-align: center;
+}
+.portfolio-item img{
+	width:50%;
+	margin: 0 auto;
+}
+
+footer {
+    margin: 50px 0;
+}
