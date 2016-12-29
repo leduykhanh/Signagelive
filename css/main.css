@@ -1,5 +1,5 @@
 /*!
- * Start Bootstrap - 4 Col Portfolio (http://startbootstrap.com/)
+ * Start Bootstrap - 4 Col service (http://startbootstrap.com/)
  * Copyright 2013-2016 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
@@ -8,22 +8,36 @@ body {
     padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
 
-.portfolio-item:nth-of-type(odd){
+.service-item:nth-of-type(odd){
   background-color: yellow;
 }
-.portfolio-item:nth-of-type(even){
+.service-item:nth-of-type(even){
   background-color: green;
 }
-.portfolio-item {
+.service-item {
     display: none;
     padding: 10px 10px 5px 10px;
     text-align: center;
+	font-weight: 800;  
+    color: white !important;
 }
-.portfolio-item img{
+.service-item img{
 	width:50%;
 	margin: 0 auto;
 }
-
+#this-that{
+	font-size: 6em;
+    font-weight: 800;
+    line-height: 1;
+    text-align: center;
+    cursor: pointer;
+}
+#this{
+	color: blue;
+}
+#that{
+	color: orange;
+}
 footer {
     margin: 50px 0;
 }

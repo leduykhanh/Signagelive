@@ -1,8 +1,9 @@
-$.router.add('/items/:item', function(data) {
+$.router.add('/this/', function(data) {
     console.log(data.item);
 });
-$("#this-that").click(function(){ 
+$("#this,#that").click(function(){ 
 
-	$.router.go('/items/mycoolitem', 'My cool item');
-	$(".portfolio-item").show(1000);
+	$.router.go('/this/', 'Service');
+	$(".service-item").show(1000);
+	$("#this-that").hide();
 		});
