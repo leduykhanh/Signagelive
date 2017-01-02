@@ -1,0 +1,17 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+/emberjs/dist
+/emberjs/tmp
+
+# dependencies
+/emberjs/node_modules
+/emberjs/bower_components
+
+# misc
+/emberjs/.sass-cache
+/emberjs/connect.lock
+/emberjs/coverage/*
+/emberjs/libpeerconnection.log
+npm-debug.log
+testem.log
