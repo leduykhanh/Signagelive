@@ -76,11 +76,11 @@
             if <span id="this">✚ this</span> then <span id="that">that</span>
         </div>
         <div id="service" class="row">
-            <div id="feed-service" class="col-md-2 service-item">
+            <div class="col-md-2 service-item">
                 <a href="#">
                     <img class="img-responsive" src="images/on_color_large (2).png" alt="">
                     <div class="name">
-                        Feed
+                        Twitter
                     </div>
                 </a>
             </div>
@@ -88,11 +88,11 @@
                 <a href="#">
                     <img class="img-responsive" src="images/on_color_large (3).png" alt="">
                     <div class="name">
-                        Feed
+                        SMS
                     </div>
                 </a>
             </div>
-            <div class="col-md-2 service-item">
+            <div id="feed-service" class="col-md-2 service-item" style="background-color: #EC7505;">
                 <a href="#">
                     <img class="img-responsive" src="images/on_color_large (4).png" alt="">
                     <div class="name">
@@ -100,11 +100,11 @@
                     </div>
                 </a>
             </div>
-            <div class="col-md-2 service-item">
+            <div id="email-service" class="col-md-2 service-item" style="background-color: #2468ff;">
                 <a href="#">
                     <img class="img-responsive" src="images/on_color_large (5).png" alt="">
                     <div class="name">
-                        Feed
+                        Email
                     </div>
                 </a>
             </div>
@@ -190,10 +190,11 @@
             </div>
         </div>
         <div id="feed" class="row text-center hidden">
-            <h1> Choose trigger</h1>
+            <h1><b> Choose trigger</b></h1>
+            <h3><b> Step 2 of 6</b></h3>
             <div id="feed-new" class="col-sm-6">    
                 <div class="feed-item">
-                    <h2>New feed item</h2>
+                    <h2><b>New feed item</b></h2>
                     <div class="name">
                         This Trigger fires every time a new item is added to the feed you specify.
                     </div>
@@ -201,7 +202,7 @@
             </div>
             <div id="feed-new-match" class="col-sm-6">    
                 <div class="feed-item">
-                    <h2>New feed item matches</h2>
+                    <h2><b>New feed item matches</b></h2>
                     <div class="name">
                         This Trigger fires every time a new item in the feed you specify contains a particular keyword or simple phrase.
                     </div>
@@ -210,10 +211,11 @@
         </div>
 
         <div id="feed-trigger" class="row text-center hidden">
-            <h1> Complete trigger fields</h1>
+            <h1><b> Complete trigger fields</b></h1>
+            <h3><b> Step 3 of 6</b></h3>
             <div class="col-sm-6 col-sm-offset-3 text-left">    
-                <div class="feed-item">
-                    <h2>New feed item</h2>
+                <div class="feed-item-lg">
+                    <h2><b>New feed item</b></h2>
                     <div class="name">
                         This Trigger fires every time a new item is added to the feed you specify.
                     </div>
@@ -223,13 +225,61 @@
                       <div id="url-error" class="error">URL is invalid</div>
                     </div>
                     <div class="text-center">
-                        <button id="create-button" type="button" class="btn btn-primary btn-lg disabled">Create trigger</button>
+                        <button id="create-button" type="button" class="btn btn-default btn-lg disabled">Create trigger</button>
                     </div>
                 </div>        
             </div>
 
         </div>
+        <div id="email" class="row text-center hidden">
+            <h1><b> Choose action</b></h1>
+            <h3><b> Step 4 of 6</b></h3>
+            <div id="email-new" class="col-sm-6">    
+                <div class="email-item">
+                    <h2><b>Send me an email</b></h2>
+                    <div class="name">
+                        This Action will send you an HTML based email. Images and links are supported.
+                    </div>
+                </div>        
+            </div>
+        </div>
+        <div id="email-fill" class="row text-center hidden">
+            <h1><b> Complete action fields</b></h1>
+            <h3><b> Step 5 of 6</b></h3>
+            <div class="col-sm-6 col-sm-offset-3 text-left">    
+                <div class="email-item-lg">
+                    <h2><b>Send me an email</b></h2>
+                    <div class="name">
+                        This Action will send you an HTML based email. Images and links are supported.
+                    </div>
+                    <div class="form-group">
+                      <label for="pwd">Email address*:</label>
+                      <input type="text" class="form-control" id="email-box">
+                      <div id="email-error" class="error">email is invalid</div>
+                    </div>
+                    <div class="text-center">
+                        <button id="create-action" type="button" class="btn btn-default btn-lg disabled">Create action</button>
+                    </div>
+                </div>        
+            </div>
 
+        </div>
+        <div id="summary" class="row text-center hidden">
+            <h1><b> Review and finish</b></h1>
+            <h3><b> Step 6 of 6</b></h3>
+            <div class="col-sm-6 col-sm-offset-3 text-left">    
+                <div class="feed-item-lg">
+                    <h2><b><img width="100" class="img-responsive" src="images/on_color_large (4).png" alt=""></b></h2>
+                    <div class="summary">
+                        If new feed item from <span id="feed_url"></span>, then send me an email at <span id="email_address"></span>.
+                    </div>
+                </div>        
+            </div>
+            <div class="clear-fix"></div>
+            <div class=" row text-center">
+                <button id="finish" type="button" class="btn btn-default btn-lg">Finish</button>
+            </div>
+        </div>
         <hr>
 
         <!-- Pagination -->

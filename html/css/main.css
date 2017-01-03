@@ -60,3 +60,58 @@ footer {
     font-size: 2em;
     font-weight: 300;
 }
+.feed-item-lg{
+    background-color:#ec7505;  
+    color: white;
+    margin: 10px 10px 10px 10px;
+    border-radius: 10px;
+    width: 500px;
+    min-height: 260px;
+    padding: 15px;
+    font-size: 1.5em;
+    font-weight: 200;
+}
+.error{
+    color: red;
+    font-size: 1em;
+    font-weight: 100;
+}
+a > .name {
+    color: white;
+    margin: 10px;
+}
+.email-item{
+    background-color:#2468ff;  
+    color: white;
+    margin: 10px 10px 10px 10px;
+    border-radius: 10px;
+    width: 300px;
+    min-height: 260px;
+    padding: 15px;
+    font-size: 1.5em;
+    font-weight: 200;
+}
+.email-item-lg{
+    background-color:#2468ff;  
+    color: white;
+    margin: 10px 10px 10px 10px;
+    border-radius: 10px;
+    width: 500px;
+    min-height: 260px;
+    padding: 15px;
+    font-size: 1.5em;
+    font-weight: 200;
+}
+.summary{
+    border-radius: 10px;
+    border: solid 3px red;
+    padding: 10px;
+    font-size: 1.6em;
+    font-weight: 600;
+}
+.btn-lg {
+   border: solid 3px red; 
+   border-radius: 30px;
+   font-size: 1.6em;
+   font-weight: 600;
+}
