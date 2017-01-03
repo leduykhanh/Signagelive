@@ -1,0 +1,17 @@
+<div class="col-sm-6 col-sm-offset-3 text-left">    
+    <div class="feed-item-lg">
+        <h2><b>New feed item</b></h2>
+        <div class="name">
+            This Trigger fires every time a new item is added to the feed you specify.
+        </div>
+        <div class="form-group">
+          <label for="pwd">Feed URL*:</label>
+          <input type="text" class="form-control" id="url">
+          <div id="url-error" class="error">URL is invalid</div>
+        </div>
+        <div class="text-center">
+            <button id="create-button" type="button" class="btn btn-default btn-lg disabled">Create trigger</button>
+        </div>
+    </div>        
+</div>
+{{yield}}

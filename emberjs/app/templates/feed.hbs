@@ -1,3 +1,6 @@
-{{#main-navbar}}{{/main-navbar}}
-{{#title-header}}{{/title-header}}
-{{outlet}}
+{{#body-wrapper}}
+	{{#title-header item=model.headerItem}}{{/title-header}}
+	{{#each model.feedItems as |item|}}
+		{{#feed-item item=item}}{{/feed-item}}
+	{{/each}}
+{{/body-wrapper}}

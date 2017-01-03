@@ -7,6 +7,7 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('feed');
+  this.route('feed-new');
 });
 
 export default Router;

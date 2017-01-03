@@ -7,7 +7,8 @@ export default Ember.Route.extend({
         [{
           itemId: 'feed-service',
           image: 'assets/images/on_color_large (2).png',
-          name: 'Feed'
+          name: 'Feed',
+          url: '/feed/'
         }, {
           itemId: 'feed-service',
           image: 'assets/images/on_color_large (3).png',
