@@ -1,13 +1,5 @@
-{{#main-navbar}}{{/main-navbar}}
+{{#body}}
 
-<div id="main-content" class="container">
-
-  <div class="row">
-      <div class="col-lg-12">
-          <h1 class="page-header">IFTTT mimic
-          </h1>
-      </div>
-  </div>
   <div id="this-that" class="row">
       if <span id="this">✚ this</span> then <span id="that">that</span>
   </div>
@@ -16,33 +8,6 @@
       {{#service-item service=service}}{{/service-item}}
     {{/each}}
   </div>
+{{/body}}
 
-</div>
-<script>
-$("#this,#that").click(function(){ 
-  $(".service-item").show(1000);
-  $("#this-that").hide();
-    });
-$("#feed-service").click(function(){
-  $("#service").addClass("hidden");
-  $("#feed").removeClass("hidden");
-})
-$("#feed-new").click(function(){
-  $("#feed").addClass("hidden");
-  $("#feed-trigger").removeClass("hidden");
-})
-$( "#url" ).keyup(function() {
-  console.log($(this).val());
-  a = validate({website: $(this).val()}, {website: {url: true}});
-  if(a === undefined){
-    $("#url-error").addClass("hidden");
-    $("#create-button").removeClass("disabled");
-  }
-  else{
-    $("#url-error, #create-button").removeClass("hidden");
-    $("#create-button").addClass("disabled");
-  }
-});
-</script>
 
-{{outlet}}
