@@ -8,6 +8,9 @@ const Router = Ember.Router.extend({
 Router.map(function() {
   this.route('feed');
   this.route('feed-new');
+  this.route('email');
+  this.route('email-new');
+  this.route('summary');
 });
 
 export default Router;

@@ -1,0 +1,17 @@
+<div class="col-sm-6 col-sm-offset-3 text-left">    
+    <div class="email-item-lg">
+        <h2><b>Send me an email</b></h2>
+        <div class="name">
+            This Action will send you an HTML based email. Images and links are supported.
+        </div>
+        <div class="form-group">
+          <label for="pwd">Email address*:</label>
+          <input type="text" class="form-control" id="url">
+          <div id="url-error" class="{{if hasError 'hidden'}}">email is invalid</div>
+        </div>
+        <div class="text-center">
+            <button id="create-button" type="button" class="btn btn-default btn-lg disabled">Create action</button>
+        </div>
+    </div>        
+</div>
+{{yield}}

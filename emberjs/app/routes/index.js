@@ -12,7 +12,8 @@ export default Ember.Route.extend({
         }, {
           itemId: 'feed-service',
           image: 'assets/images/on_color_large (3).png',
-          name: 'Feed'
+          name: 'Mail',
+          url: '/email/'
         }, {
           itemId: 'feed-service',
           image: 'assets/images/on_color_large (4).png',

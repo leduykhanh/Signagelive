@@ -24,17 +24,6 @@ $("#feed-new").click(function(){
   $("#feed").addClass("hidden");
   $("#feed-trigger").removeClass("hidden");
 })
-$( "#url" ).keyup(function() {
-  console.log($(this).val());
-  a = validate({website: $(this).val()}, {website: {url: true}});
-  if(a === undefined){
-    $("#url-error").addClass("hidden");
-    $("#create-button").removeClass("disabled");
-  }
-  else{
-    $("#url-error, #create-button").removeClass("hidden");
-    $("#create-button").addClass("disabled");
-  }
-});
+
 </script>
 

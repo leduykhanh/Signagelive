@@ -59,6 +59,14 @@ footer {
     @extend .feed-item;
     width: 500px;
 }
+.email-item{
+    @extend .feed-item;
+    background-color:#2468ff;
+    }
+.email-item-lg{
+    @extend .email-item;
+    width: 500px;
+}
 .button-create{
     color:black ;
     background-color: white;

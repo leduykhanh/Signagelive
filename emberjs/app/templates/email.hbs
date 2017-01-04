@@ -1,0 +1,6 @@
+{{#body-wrapper}}
+	{{#title-header item=model.headerItem}}{{/title-header}}
+	{{#each model.emailItems as |item|}}
+		{{#email-item item=item}}{{/email-item}}
+	{{/each}}
+{{/body-wrapper}}
