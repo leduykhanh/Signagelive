@@ -55,6 +55,10 @@ footer {
     font-size: 1.5em;
     font-weight: 200;
 }
+.feed-item-lg{
+    @extend .feed-item;
+    width: 500px;
+}
 .button-create{
     color:black ;
     background-color: white;
