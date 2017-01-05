@@ -2,6 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model() {
+    this.store.push({data:{id:1,type:"feed",url:"ccc.com"}});
     return Ember.RSVP.hash({
       serviceItems: Ember.RSVP.Promise.cast(
         [{

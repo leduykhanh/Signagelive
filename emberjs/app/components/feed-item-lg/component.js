@@ -2,7 +2,7 @@ import Ember from 'ember';
 // import {validate} from 'validate';
 export default Ember.Component.extend({
   beenkeyUp: false,
-  valid: null,
+  valid: false,
   hasError: Ember.computed('valid', 'beenkeyUp', function() {
     if (this.get('beenkeyUp')) {
       return !this.get('valid');
@@ -10,6 +10,15 @@ export default Ember.Component.extend({
   }),
   keyUp: function() {
     this.set('beenkeyUp', true);
-    console.log(this.$("#url"));
+    var url = this.$("#url").val();
+    var expression = /[-a-zA-Z0-9@:%_\+.~#?&//=]{2,256}\.[a-z]{2,4}\b(\/[-a-zA-Z0-9@:%_\+.~#?&//=]*)?/gi;
+    var regex = new RegExp(expression);
+    if (url.match(regex)) this.set('valid', true);
+    else this.set('valid', false);
+  },
+  actions: {
+    saveFeed:function() {
+      this.sendAction();
+    }
   }
 });

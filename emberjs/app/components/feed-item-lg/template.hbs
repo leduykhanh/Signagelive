@@ -4,14 +4,16 @@
         <div class="name">
             This Trigger fires every time a new item is added to the feed you specify.
         </div>
+        <form>
         <div class="form-group">
           <label for="pwd">Feed URL*:</label>
           <input type="text" class="form-control" id="url">
-          <div id="url-error" class="{{if hasError 'hidden'}}">URL is invalid</div>
+          <div id="url-error" class="{{unless hasError 'hidden'}}">URL is invalid</div>
         </div>
         <div class="text-center">
-            <button id="create-button" type="button" class="btn btn-default btn-lg disabled">Create trigger</button>
+            <button id="create-button" {{action "saveFeed"}} type="submit" class="btn btn-default btn-lg {{if hasError 'disabled'}}">Create trigger</button>
         </div>
+        </form>
     </div>        
 </div>
 {{yield}}
