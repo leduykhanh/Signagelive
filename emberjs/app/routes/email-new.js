@@ -11,5 +11,10 @@ model() {
       ),
       headerItem: {title: 'Choose action', step:5}
     });
+  },
+actions: {
+    saveEmail:function() {
+      this.transitionTo('summary');
+    }
   }
 });

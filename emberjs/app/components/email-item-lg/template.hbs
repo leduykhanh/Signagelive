@@ -5,12 +5,12 @@
             This Action will send you an HTML based email. Images and links are supported.
         </div>
         <div class="form-group">
-          <label for="pwd">Email address*:</label>
-          <input type="text" class="form-control" id="url">
-          <div id="url-error" class="{{if hasError 'hidden'}}">email is invalid</div>
+          <label for="email">Email address*:</label>
+          <input type="text" class="form-control" id="email">
+          <div id="url-error" class="{{unless hasError 'hidden'}}">email is invalid</div>
         </div>
         <div class="text-center">
-            <button id="create-button" type="button" class="btn btn-default btn-lg disabled">Create action</button>
+            <button id="create-button" {{action "saveEmail"}} type="submit" class="btn btn-default btn-lg {{if hasError 'disabled'}}">Create action</button>
         </div>
     </div>        
 </div>

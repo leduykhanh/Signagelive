@@ -5,7 +5,7 @@
   </div>
   <div id="service" class="row">
     {{#each model.serviceItems as |service|}}
-      {{#service-item service=service}}{{/service-item}}
+      {{#service-item store=store service=service}}{{/service-item}}
     {{/each}}
   </div>
 {{/body-wrapper}}

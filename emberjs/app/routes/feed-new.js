@@ -7,9 +7,8 @@ model() {
     });
   },
 actions: {
-    saveFeed:function() {
-      console.log(this.get('store'));
-      this.transitionTo('/');
+    saveFeed:function(url) {
+      this.transitionTo('/?url='+url);
     }
   }
 });
