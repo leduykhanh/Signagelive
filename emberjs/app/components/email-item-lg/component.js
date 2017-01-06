@@ -24,8 +24,8 @@ export default Ember.Component.extend({
     actions: {
     saveEmail:function() {
       this.get("ifttt").add({email: this.get("email")});
-      console.log(this.get("ifttt").items[0].url);
-      this.sendAction();
+      if(this.get("valid"))
+        this.sendAction();
     }
   }
 });

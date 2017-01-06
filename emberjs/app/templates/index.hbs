@@ -1,7 +1,12 @@
 {{#body-wrapper}}
 
   <div id="this-that" class="row">
-      if <span id="this">✚ this</span> then <span id="that">that</span>
+      if {{#if model.that}} 
+      <span class="this">Feed</span> then <span id="that" class="that">✚ that</span>
+          {{else}}
+      <span class="this" id="this">✚ this</span> then <span class="that">that</span>
+          {{/if}}
+      
   </div>
   <div id="service" class="row">
     {{#each model.serviceItems as |service|}}

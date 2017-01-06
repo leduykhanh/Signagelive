@@ -23,8 +23,8 @@ export default Ember.Component.extend({
   actions: {
     saveFeed:function() {
       this.get("ifttt").add({url: this.get("url")});
-      console.log(this.get("ifttt").items[0].url);
-      this.sendAction();
+      if(this.get("valid"))
+        this.sendAction();
     }
   }
 });

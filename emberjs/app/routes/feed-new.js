@@ -8,7 +8,7 @@ model() {
   },
 actions: {
     saveFeed:function(url) {
-      this.transitionTo('/?url='+url);
+    	this.transitionTo('index', {queryParams: {state: 'that'}});
     }
   }
 });
