@@ -10,16 +10,18 @@ export default Ember.Route.extend({
           itemId: 'feed-service',
           image: 'assets/images/on_color_large (4).png',
           name: 'Feed',
-          url: 'feed'
+          url: 'feed',
+          customStyle:"background-color: #EC7505;"
         }, {
           itemId: 'feed-service',
           image: 'assets/images/on_color_large (5).png',
           name: 'Mail',
-          url: 'email'
+          url: 'email',
+          customStyle:"background-color: #2468ff;"
         }, {
           itemId: 'feed-2',
           image: 'assets/images/on_color_large (1).png',
-          name: 'Feed'
+          name: 'Matrix'
         }, {
           itemId: 'feed-1',
           image: 'assets/images/on_color_large (6).png',
