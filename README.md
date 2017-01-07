@@ -3,6 +3,6 @@ Signagelive projects - Technical Task
 - Ember JS version is under emberjs
 
 How to run:
-+ go to http://localhost/Signagelive/html/ for html view
++ go to <code>http://localhost/Signagelive/html/</code> for html view
 + <code>ember server</code>
-+ visit http://localhost:4200/ for the site 
++ visit <code>http://localhost:4200/ </code>for the site 
